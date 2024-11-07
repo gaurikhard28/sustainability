@@ -9,7 +9,7 @@ const initialState = {
     ],
     articles: [
       { id: 1, title: 'Sustainability in Automotive', time: '27 mins ago', reads: 21, image: 'article1-image-url' },
-      { id: 2, title: 'TCS UK Sustainability Competition', time: '3 days ago', reads: 19, image: 'article2-image-url' },
+      //{ id: 2, title: 'TCS UK Sustainability Competition', time: '3 days ago', reads: 19, image: 'article2-image-url' },
     ],
   };
 const newsSlice = createSlice({

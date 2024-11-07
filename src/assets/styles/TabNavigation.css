@@ -1,0 +1,132 @@
+.tab-navigation {
+    display: flex; /* Use flexbox for layout */
+    width: 100%; /* Full width */
+    border-bottom: 2px solid #007bff; /* Bottom border for the tabs */
+  }
+  
+  .tab {
+    flex: 1; /* Each tab takes equal space */
+    padding: 10px; /* Padding inside each tab */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Font size */
+    color:  #969696; /* Default text color */
+    position: relative; /* Position relative for the active underline */
+  }
+  
+  .tab.active {
+    color: #4A4A4A; /* Color for active tab text */
+  }
+  
+  .tab.active::after {
+    content: ''; /* Pseudo-element for underline */
+    position: absolute; /* Position absolutely */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    bottom: -2px; /* Position under the text */
+    height: 2px; /* Height of the underline */
+    background-color: #007bff; /* Color of the underline */
+  }
+  
+  
+  .insights {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(3, auto); /* Three rows */
+    gap: 10px; /* Space between grid items */
+    padding: 10px; /* Padding around the grid */
+  }
+  
+  .card {
+    background: #fff; /* White background for each card */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Padding inside the card */
+    
+  }
+  
+  .card-logo {
+    width: 99px; /* Full width of the card */
+    height: 99px; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width for logos */
+    margin: 0 ; /* Center the logo */
+  }
+  
+  .card h3 {
+    margin: 10px 0 0 0; /* Margin above the heading */
+    font-size: 1.2em; /* Adjust font size */
+    color: #333; /* Text color */
+  }
+
+  .article-item {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out content */
+    align-items: flex-start; /* Align items to the top */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px 0; /* Margin between items */
+  }
+  
+  .article-content {
+    flex: 1; /* Allow content to take remaining space */
+    display: flex; /* Use flexbox for column layout */
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .article-header {
+    margin-bottom: 10px; /* Space between header and title */
+  }
+  
+  .article-subheader {
+    font-size: 14px; /* Smaller font size for subheader */
+    color: #969696; /* Gray color for subheader text */
+  }
+  
+  .article-title {
+    font-size: 18px; /* Font size for the article title */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .article-image {
+    width: 80px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Slight rounding of corners */
+    margin-left: 20px; /* Space between content and image */
+  }
+  
+  .share-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #007bff; /* Color for the share icon */
+    font-size: 20px; /* Size of the share icon */
+    margin-top: 10px; /* Space above the share button */
+    align-self: flex-end; /* Align button to the right */
+  }
+  
+  
+  .toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -20px); /* Start off-screen */
+  background-color: #4caf50; /* Green background for success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+
+.app{
+    background-color: #F8F8F8;
+}

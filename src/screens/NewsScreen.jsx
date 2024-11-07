@@ -10,7 +10,7 @@ const NewsScreen = () => {
 
   return (
     <div className="app">
-      <header className="header">
+      <header >
         <h2>News</h2>
         <p>Get the latest on sustainability, company initiatives, and global news from trusted sources like Science Daily and SDG.</p>
       </header>

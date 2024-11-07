@@ -1,0 +1,38 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a 2-column layout */
+    gap: 10px; /* Space between the grid items */
+    padding: 5px; /* Padding around the grid */
+}
+
+.widget {
+    background-color: #f0f0f0; /* Background color for the widgets */
+    border: 1px solid #ddd; /* Border around the widgets */
+    border-radius: 8px; /* Rounded corners */
+    padding: 5px; /* Padding inside each widget */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center the text */
+}
+
+button {
+    margin-top: 20px; /* Space above the button */
+    padding: 0px 10px; /* Padding for the button */
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+ 
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.row-title{
+    font-size: 15px;
+}
+
+.row-desc{
+    font-size: 10px;
+}

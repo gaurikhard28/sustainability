@@ -12,7 +12,8 @@ function Article() {
   const handleShare = (articleLink) => {
     navigator.clipboard.writeText(articleLink);
     setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
+    setTimeout(() => setShowToast(false), 3000); 
+    console.log('hi');// Hide toast after 3 seconds
   };
 
   const handleRead = (articleId) => {
@@ -21,8 +22,7 @@ function Article() {
 
   return (
     <div>
-      <h2>Articles</h2>
-      <p>Get the latest on sustainability, company initiatives, and global news from trusted sources.</p>
+      
       <div className="articles-list">
         {articles.map((article) => (
           <ArticleItem
@@ -33,9 +33,11 @@ function Article() {
             onShare={() => handleShare(`https://example.com/article/${article.id}`)}
             onRead={() => handleRead(article.id)}
           />
+          
         ))}
       </div>
-      {showToast && <Toast message="Article link copied" />}
+      <Toast message="hi"/>
+      {showToast && <Toast message="Article link copied" isVisible={showToast}/>}
     </div>
   );
 }

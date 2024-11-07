@@ -1,0 +1,42 @@
+.link-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    margin-bottom: 20px; /* Margin below each row */
+}
+
+.link-box {
+    display: flex; /* Flexbox for icon and text */
+    flex-direction: column; /* Stack text above icon */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center align items */
+    width: 100px; /* Fixed width for the boxes */
+    height: 100px; /* Fixed height for the boxes */
+    background: #ffffff; /* White background */
+    position: relative; /* Position relative for pseudo-element */
+    color: black; /* Text color */
+    font-size: 15px;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow */
+    margin: 5px;
+}
+
+.link-box:after {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    height: 50%; /* Half the height of the box */
+    background-color: #007bff; /* Blue background for the bottom half */
+}
+
+.link-box .icon {
+    font-size: 24px; /* Icon size */
+    margin-top: 5px; /* Space between text and icon */
+}
+
+.link-box:hover {
+    opacity: 0.9; /* Slightly darken on hover */
+}

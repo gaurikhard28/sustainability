@@ -1,0 +1,40 @@
+/* Header.css */
+
+.header {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px; /* Rounded bottom corners */
+    border-bottom-right-radius: 10px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 10px;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .verified-icon {
+    color: white;
+    margin-left: 5px; /* Space between name and tick */
+  }
+  
+  .notification-icon {
+    font-size: 20px; /* Size for notification icon */
+    color: white;
+  }
+  

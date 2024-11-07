@@ -1,0 +1,18 @@
+.stories {
+    padding: 20px; /* Add padding around the stories section */
+    text-align: center; /* Center align the title */
+}
+
+.story-thumbnails {
+    display: flex; /* Use flexbox to arrange images in a row */
+    justify-content: center; /* Center the images */
+    gap: 10px; /* Space between images */
+}
+
+.story-thumbnails img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to make them squares */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire square */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}

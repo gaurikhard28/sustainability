@@ -11,6 +11,8 @@ import HomeScreen from './screens/HomeScreen';
 import store from './store';
 import MoreScreen from './screens/MoreScreen';
 import NewsScreen from './screens/NewsScreen';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const router=createBrowserRouter(
   createRoutesFromElements(
